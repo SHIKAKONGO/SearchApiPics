@@ -1,0 +1,23 @@
+<div class="container pt-5">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <input    [(ngModel)]="searchQueary" placeholder="Find Images" class="form-control">
+            <button type="button" (click)="searchImg(searchQueary)" class="btn btn-danger">Click</button>
+        </div>
+        <div class="col-md-4"></div>
+        <div class="row">
+            <div class="col-md-3" *ngFor="let image of images">
+                <div class="pics">
+                    <a target="_blank" [href]="image.pageURL">
+                    <img [src]="image.largeImageURL" class="w-100">
+                    <h5>Downloads: {{ image.downloads }}</h5>
+                    <h6>Likes: {{ image.likes }}</h6>
+                    <h6>Authors: {{ image.user}}</h6>
+                </a>
+                </div>
+            </div>
+        </div>
+        <a class="btn btn-success btn-lg" routerLink="" role="button">Go To Home Page</a>
+    </div>
+</div>

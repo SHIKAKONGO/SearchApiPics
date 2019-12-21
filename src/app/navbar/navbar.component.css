@@ -1,0 +1,9 @@
+.navbar-brand,
+.nav-link,
+.click  {
+    color: white !important
+}
+.click {
+    cursor: pointer;
+    background: red;
+}

@@ -1,0 +1,27 @@
+
+.pics {
+    background: white;
+    border-radius: 2%;
+    border: 1px solid black;
+}
+.pics a:hover {
+    text-decoration: none;
+}
+
+.pics:hover {
+    border: 1px solid gray;
+    transition: all 0.5s ease-in-out;
+    background: black;
+}
+.pics {
+    margin: 10px;
+}
+
+.btn-danger {
+    margin-top: 15px;
+}
+.pics h5:hover,
+.pics h6:hover {
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
